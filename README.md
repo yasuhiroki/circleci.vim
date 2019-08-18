@@ -11,7 +11,7 @@ TODO: I'll add some snippets
 
 ## Highlighting Example
 
-TODO
+![IMG](./img/highlight_sample.png)
 
 # Installation
 
