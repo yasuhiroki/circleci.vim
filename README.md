@@ -11,6 +11,8 @@ TODO: I'll add some snippets
 
 ## Highlighting Example
 
+
+before <-> after
 ![IMG](./img/highlight_sample.png)
 
 # Installation
