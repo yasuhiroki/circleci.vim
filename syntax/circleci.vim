@@ -10,7 +10,7 @@ let s:cci_keywords_key = '\%(^\|\s\)\@<=\zs\%('.join(circleci#GetKeywords(), '\|
 let s:cci_keywords_conditional_key = '\%(^\|\s\)\@<=\zs\%('.join(circleci#GetKeywordsConditional(), '\|').'\)\ze\%(\s*:\|$\)'
 let s:cci_keywords_step_key = '\%([0-9A-Za-z_-]\)\@<!\%('.join(circleci#GetKeywordsStep(), '\|').'\)\ze\%(\s*:\|$\)'
 
-syn region CciCnfParameter matchgroup=PreProc start="<<[^:]" end=">>" containedin=yamlPlainScalar keepend
+syn region CciCnfParameter matchgroup=PreProc start="<<\ze[^:]" end=">>" containedin=yamlPlainScalar keepend
 syn region CciCnfTemplate matchgroup=PreProc start="{{" end="}}" containedin=yamlPlainScalar keepend
 
 exe 'syn match CciCnfKeywords /'.s:cci_keywords_key.'/ contained nextgroup=yamlKeyValueDelimiter containedin=yamlBlockMappingKey'
