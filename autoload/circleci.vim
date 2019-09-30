@@ -8,7 +8,7 @@ set cpo&vim
 
 let s:cci_keywords = [
             \ 'xcode',
-            \ 'working',
+            \ 'working_directory',
             \ 'workflows',
             \ 'windows',
             \ 'version',
