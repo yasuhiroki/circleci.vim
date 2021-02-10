@@ -25,8 +25,14 @@ function! circleci#Complete(findstart, base)
     endif
 endfunction
 
+if !exists('g:circleci_omnifunc_enable')
+  let g:circleci_omnifunc_enable = 0
+endif
+
 if exists("&ofu")
-  setlocal omnifunc=circleci#Complete
+  if g:circleci_omnifunc_enable == 1
+    setlocal omnifunc=circleci#Complete
+  endif
 endif
 
 let &cpo = s:save_cpo

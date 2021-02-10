@@ -23,6 +23,12 @@ before <-> after
 call dein#add('yasuhiroki/circleci.vim')
 ```
 
+## Options
+
+- `g:circleci_omnifunc_enable`
+  - if value is 1 set omnifunc=circleci#Complete
+  - default: 0
+
 ## License
 
 [MIT License](License.txt)
